@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>SIDEBAR Nav</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo">
+                <i class='bx bxs-laugh'></i>
+                <div class="logo-name"> SideBar </div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+
+        <!-- Menu List -->
+        <ul class="nav-links">
+
+            <li>
+                <i class='bx bx-search-alt' ></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-grid-alt' ></i>
+                    <span class="link_name"> Dashboard </span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-collection' ></i>
+                    <span class="link_name"> Category </span>
+                </a>
+                <span class="tooltip">Category</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book-alt' ></i>
+                    <span class="link_name"> Posts </span>
+                </a>
+                <span class="tooltip">Posts</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="link_name"> Analytics </span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart' ></i>
+                    <span class="link_name"> Chart </span>
+                </a>
+                <span class="tooltip">Chart</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-plug' ></i>
+                    <span class="link_name"> Plugins </span>
+                </a>
+                <span class="tooltip">Plugins</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass' ></i>
+                    <span class="link_name"> Explore </span>
+                </a>
+                <span class="tooltip">Explore</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name"> History </span>
+                </a>
+                <span class="tooltip">History</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link_name"> Setting </span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li>
+        </ul>
+
+
+        <!-- Block Down -->
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="profile.JPG" alt="profileImg">
+
+                    <div class="name-job">
+                            <div class="name">SOUISSI Rahma</div>
+                            <div class="job">Web Developer</div>
+                    </div>
+                </div>
+
+                <i class='bx bx-log-out'id="log_out" ></i>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="home-content">
+            <span class="text"> Home Content</span>
+        </div>
+
+    <script>
+
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search-alt");
+        let btn = document.querySelector("#btn");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        
+    </script>
+</body>
+</html>
